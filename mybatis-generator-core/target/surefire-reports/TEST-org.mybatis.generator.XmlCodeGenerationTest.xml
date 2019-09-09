@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.mybatis.generator.XmlCodeGenerationTest" time="1.985" tests="86" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="12"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\WorkSpace\shimmer\mybatis-generator-core\target\test-classes;D:\WorkSpace\shimmer\mybatis-generator-core\target\classes;C:\Users\mi\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\mi\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\mi\.m2\repository\org\apache\logging\log4j\log4j-api\2.12.0\log4j-api-2.12.0.jar;C:\Users\mi\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mi\.m2\repository\org\apache\ant\ant\1.10.6\ant-1.10.6.jar;C:\Users\mi\.m2\repository\org\apache\ant\ant-launcher\1.10.6\ant-launcher-1.10.6.jar;C:\Users\mi\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.0\junit-jupiter-api-5.5.0.jar;C:\Users\mi\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\mi\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\mi\.m2\repository\org\junit\platform\junit-platform-commons\1.5.0\junit-platform-commons-1.5.0.jar;C:\Users\mi\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.5.0\junit-jupiter-params-5.5.0.jar;C:\Users\mi\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.0\junit-jupiter-engine-5.5.0.jar;C:\Users\mi\.m2\repository\org\junit\platform\junit-platform-engine\1.5.0\junit-platform-engine-1.5.0.jar;C:\Users\mi\.m2\repository\org\junit\platform\junit-platform-launcher\1.5.0\junit-platform-launcher-1.5.0.jar;C:\Users\mi\.m2\repository\org\assertj\assertj-core\3.12.2\assertj-core-3.12.2.jar;C:\Users\mi\.m2\repository\org\hsqldb\hsqldb\2.5.0\hsqldb-2.5.0.jar;C:\Users\mi\.m2\repository\com\github\javaparser\javaparser-core\3.14.7\javaparser-core-3.14.7.jar;C:\Users\mi\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.41\kotlin-stdlib-1.3.41.jar;C:\Users\mi\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.41\kotlin-stdlib-common-1.3.41.jar;C:\Users\mi\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\mi\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="12"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="D:\Tools\Java\jdk12.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\mi\AppData\Local\Temp\surefire5585624452470921967\surefirebooter3347095733379735804.jar C:\Users\mi\AppData\Local\Temp\surefire5585624452470921967 2019-08-05T14-43-12_194-jvmRun1 surefire9638614996986250tmp surefire_012206412741302475687tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\WorkSpace\shimmer\mybatis-generator-core\target\test-classes;D:\WorkSpace\shimmer\mybatis-generator-core\target\classes;C:\Users\mi\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\mi\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\mi\.m2\repository\org\apache\logging\log4j\log4j-api\2.12.0\log4j-api-2.12.0.jar;C:\Users\mi\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mi\.m2\repository\org\apache\ant\ant\1.10.6\ant-1.10.6.jar;C:\Users\mi\.m2\repository\org\apache\ant\ant-launcher\1.10.6\ant-launcher-1.10.6.jar;C:\Users\mi\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.0\junit-jupiter-api-5.5.0.jar;C:\Users\mi\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\mi\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\mi\.m2\repository\org\junit\platform\junit-platform-commons\1.5.0\junit-platform-commons-1.5.0.jar;C:\Users\mi\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.5.0\junit-jupiter-params-5.5.0.jar;C:\Users\mi\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.0\junit-jupiter-engine-5.5.0.jar;C:\Users\mi\.m2\repository\org\junit\platform\junit-platform-engine\1.5.0\junit-platform-engine-1.5.0.jar;C:\Users\mi\.m2\repository\org\junit\platform\junit-platform-launcher\1.5.0\junit-platform-launcher-1.5.0.jar;C:\Users\mi\.m2\repository\org\assertj\assertj-core\3.12.2\assertj-core-3.12.2.jar;C:\Users\mi\.m2\repository\org\hsqldb\hsqldb\2.5.0\hsqldb-2.5.0.jar;C:\Users\mi\.m2\repository\com\github\javaparser\javaparser-core\3.14.7\javaparser-core-3.14.7.jar;C:\Users\mi\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.41\kotlin-stdlib-1.3.41.jar;C:\Users\mi\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.41\kotlin-stdlib-common-1.3.41.jar;C:\Users\mi\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\mi\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\mi"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2019-07-16"/>
+    <property name="java.home" value="D:\Tools\Java\jdk12.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\WorkSpace\shimmer\mybatis-generator-core"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\mi\AppData\Local\Temp\surefire5585624452470921967\surefirebooter3347095733379735804.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="12.0.2+10"/>
+    <property name="user.name" value="mi"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\mi\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\mi\AppData\Local\Temp\"/>
+    <property name="java.version" value="12.0.2"/>
+    <property name="user.dir" value="D:\WorkSpace\shimmer\mybatis-generator-core"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="idea.version2019.1.3" value="true"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="D:\Tools\Java\jdk12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Tools\TortoiseSVN\bin;D:\Tools\nodejs\;D:\Tools\Java\jdk1.8.0_211\bin;%MAVEN_HOME%\bin\;C:\Users\mi\AppData\Local\Microsoft\WindowsApps;C:\Users\mi\AppData\Roaming\npm;D:\Tools\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="12.0.2+10"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="56.0"/>
+  </properties>
+  <testcase name="testXmlParse{GeneratedXmlFile}[1]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.02"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[2]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.019"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[3]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.014"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[4]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.016"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[5]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.012"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[6]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.019"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[7]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.024"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[8]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.009"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[9]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.013"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[10]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.009"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[11]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.015"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[12]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.01"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[13]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.011"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[14]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.018"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[15]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.015"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[16]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.016"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[17]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.006"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[18]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.007"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[19]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.011"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[20]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.015"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[21]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.015"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[22]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.006"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[23]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.012"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[24]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.016"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[25]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.007"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[26]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.014"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[27]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.009"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[28]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.006"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[29]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.007"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[30]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.019"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[31]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.01"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[32]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.006"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[33]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.007"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[34]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.003"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[35]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.003"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[36]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.009"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[37]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.018"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[38]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.007"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[39]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.007"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[40]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.014"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[41]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.011"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[42]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.007"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[43]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.007"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[44]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.008"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[45]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.006"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[46]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.008"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[47]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.012"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[48]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.009"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[49]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.01"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[50]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.006"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[51]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.015"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[52]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.016"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[53]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.007"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[54]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.01"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[55]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.01"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[56]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.012"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[57]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.007"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[58]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.006"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[59]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.011"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[60]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.008"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[61]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.008"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[62]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.008"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[63]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.011"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[64]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.007"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[65]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.007"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[66]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.025"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[67]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.009"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[68]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.008"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[69]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.01"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[70]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.012"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[71]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.013"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[72]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.007"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[73]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.009"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[74]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.005"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[75]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.007"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[76]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.006"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[77]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.026"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[78]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.011"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[79]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.007"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[80]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.003"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[81]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.004"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[82]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.005"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[83]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.003"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[84]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.003"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[85]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.003"/>
+  <testcase name="testXmlParse{GeneratedXmlFile}[86]" classname="org.mybatis.generator.XmlCodeGenerationTest" time="0.005"/>
+</testsuite>

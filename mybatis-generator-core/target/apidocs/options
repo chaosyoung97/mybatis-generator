@@ -1,0 +1,28 @@
+-classpath
+'C:/Users/mi/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar;C:/Users/mi/.m2/repository/org/apache/ant/ant/1.10.6/ant-1.10.6.jar;C:/Users/mi/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar;C:/Users/mi/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.0/log4j-api-2.12.0.jar;C:/Users/mi/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar;C:/Users/mi/.m2/repository/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar;C:/Users/mi/.m2/repository/org/apache/ant/ant-launcher/1.10.6/ant-launcher-1.10.6.jar'
+-encoding
+'UTF-8'
+-protected
+-quiet
+-sourcepath
+'D:/WorkSpace/shimmer/mybatis-generator-core/src/main/java;D:/WorkSpace/shimmer/mybatis-generator-core/target/generated-sources/annotations'
+-html5
+-author
+-bottom
+'Copyright &#169; 2006&#x2013;2019 <a href="http://www.mybatis.org/">MyBatis.org</a>. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'D:/WorkSpace/shimmer/mybatis-generator-core/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'MyBatis Generator Core 1.4.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'D:/WorkSpace/shimmer/mybatis-generator-core/target/javadoc-bundle-options'
+-tag
+"mbg.generated:ctmf"
+-use
+-version
+-windowtitle
+'MyBatis Generator Core 1.4.0-SNAPSHOT API'

@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.mybatis.generator.JavaCodeGenerationTest" time="12.39" tests="490" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="12"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\WorkSpace\shimmer\mybatis-generator-core\target\test-classes;D:\WorkSpace\shimmer\mybatis-generator-core\target\classes;C:\Users\mi\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\mi\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\mi\.m2\repository\org\apache\logging\log4j\log4j-api\2.12.0\log4j-api-2.12.0.jar;C:\Users\mi\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mi\.m2\repository\org\apache\ant\ant\1.10.6\ant-1.10.6.jar;C:\Users\mi\.m2\repository\org\apache\ant\ant-launcher\1.10.6\ant-launcher-1.10.6.jar;C:\Users\mi\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.0\junit-jupiter-api-5.5.0.jar;C:\Users\mi\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\mi\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\mi\.m2\repository\org\junit\platform\junit-platform-commons\1.5.0\junit-platform-commons-1.5.0.jar;C:\Users\mi\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.5.0\junit-jupiter-params-5.5.0.jar;C:\Users\mi\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.0\junit-jupiter-engine-5.5.0.jar;C:\Users\mi\.m2\repository\org\junit\platform\junit-platform-engine\1.5.0\junit-platform-engine-1.5.0.jar;C:\Users\mi\.m2\repository\org\junit\platform\junit-platform-launcher\1.5.0\junit-platform-launcher-1.5.0.jar;C:\Users\mi\.m2\repository\org\assertj\assertj-core\3.12.2\assertj-core-3.12.2.jar;C:\Users\mi\.m2\repository\org\hsqldb\hsqldb\2.5.0\hsqldb-2.5.0.jar;C:\Users\mi\.m2\repository\com\github\javaparser\javaparser-core\3.14.7\javaparser-core-3.14.7.jar;C:\Users\mi\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.41\kotlin-stdlib-1.3.41.jar;C:\Users\mi\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.41\kotlin-stdlib-common-1.3.41.jar;C:\Users\mi\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\mi\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="12"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="D:\Tools\Java\jdk12.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\mi\AppData\Local\Temp\surefire5585624452470921967\surefirebooter3347095733379735804.jar C:\Users\mi\AppData\Local\Temp\surefire5585624452470921967 2019-08-05T14-43-12_194-jvmRun1 surefire9638614996986250tmp surefire_012206412741302475687tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\WorkSpace\shimmer\mybatis-generator-core\target\test-classes;D:\WorkSpace\shimmer\mybatis-generator-core\target\classes;C:\Users\mi\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\mi\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\mi\.m2\repository\org\apache\logging\log4j\log4j-api\2.12.0\log4j-api-2.12.0.jar;C:\Users\mi\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mi\.m2\repository\org\apache\ant\ant\1.10.6\ant-1.10.6.jar;C:\Users\mi\.m2\repository\org\apache\ant\ant-launcher\1.10.6\ant-launcher-1.10.6.jar;C:\Users\mi\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.0\junit-jupiter-api-5.5.0.jar;C:\Users\mi\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\mi\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\mi\.m2\repository\org\junit\platform\junit-platform-commons\1.5.0\junit-platform-commons-1.5.0.jar;C:\Users\mi\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.5.0\junit-jupiter-params-5.5.0.jar;C:\Users\mi\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.0\junit-jupiter-engine-5.5.0.jar;C:\Users\mi\.m2\repository\org\junit\platform\junit-platform-engine\1.5.0\junit-platform-engine-1.5.0.jar;C:\Users\mi\.m2\repository\org\junit\platform\junit-platform-launcher\1.5.0\junit-platform-launcher-1.5.0.jar;C:\Users\mi\.m2\repository\org\assertj\assertj-core\3.12.2\assertj-core-3.12.2.jar;C:\Users\mi\.m2\repository\org\hsqldb\hsqldb\2.5.0\hsqldb-2.5.0.jar;C:\Users\mi\.m2\repository\com\github\javaparser\javaparser-core\3.14.7\javaparser-core-3.14.7.jar;C:\Users\mi\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.41\kotlin-stdlib-1.3.41.jar;C:\Users\mi\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.41\kotlin-stdlib-common-1.3.41.jar;C:\Users\mi\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\mi\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\mi"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2019-07-16"/>
+    <property name="java.home" value="D:\Tools\Java\jdk12.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\WorkSpace\shimmer\mybatis-generator-core"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\mi\AppData\Local\Temp\surefire5585624452470921967\surefirebooter3347095733379735804.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="12.0.2+10"/>
+    <property name="user.name" value="mi"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\mi\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\mi\AppData\Local\Temp\"/>
+    <property name="java.version" value="12.0.2"/>
+    <property name="user.dir" value="D:\WorkSpace\shimmer\mybatis-generator-core"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="idea.version2019.1.3" value="true"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="D:\Tools\Java\jdk12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Tools\TortoiseSVN\bin;D:\Tools\nodejs\;D:\Tools\Java\jdk1.8.0_211\bin;%MAVEN_HOME%\bin\;C:\Users\mi\AppData\Local\Microsoft\WindowsApps;C:\Users\mi\AppData\Roaming\npm;D:\Tools\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="12.0.2+10"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="56.0"/>
+  </properties>
+  <testcase name="testJavaParse{GeneratedJavaFile}[1]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.973"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[2]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.043"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[3]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.019"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[4]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.077"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[5]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[6]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.009"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[7]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.191"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[8]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.043"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[9]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.017"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[10]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.032"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[11]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.014"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[12]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[13]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.049"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[14]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.015"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[15]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[16]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.029"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[17]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[18]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[19]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.097"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[20]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.035"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[21]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[22]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.027"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[23]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[24]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[25]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.026"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[26]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[27]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[28]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.025"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[29]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[30]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[31]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.096"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[32]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[33]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.011"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[34]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[35]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.022"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[36]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[37]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.008"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[38]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[39]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.036"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[40]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[41]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[42]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[43]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[44]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.026"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[45]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[46]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.008"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[47]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[48]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.093"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[49]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[50]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.025"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[51]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[52]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.028"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[53]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[54]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[55]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[56]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.034"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[57]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.012"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[58]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.001"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[59]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.024"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[60]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[61]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[62]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.099"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[63]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[64]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[65]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[66]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.015"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[67]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[68]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[69]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.022"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[70]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[71]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[72]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[73]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.019"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[74]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[75]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[76]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[77]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.082"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[78]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.013"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[79]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[80]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.068"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[81]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[82]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.011"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[83]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[84]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.027"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[85]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.008"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[86]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[87]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.015"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[88]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[89]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[90]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.026"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[91]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.009"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[92]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[93]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.021"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[94]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[95]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[96]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.019"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[97]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[98]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[99]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.031"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[100]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[101]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[102]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.024"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[103]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[104]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.02"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[105]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[106]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[107]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[108]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.024"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[109]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[110]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[111]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[112]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.008"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[113]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[114]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.022"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[115]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[116]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[117]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.023"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[118]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[119]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[120]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[121]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.017"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[122]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.001"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[123]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[124]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.015"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[125]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[126]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[127]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[128]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.069"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[129]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[130]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.008"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[131]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[132]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.027"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[133]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[134]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[135]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[136]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[137]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.031"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[138]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[139]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[140]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[141]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.028"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[142]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[143]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[144]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.023"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[145]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[146]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[147]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.012"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[148]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[149]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[150]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[151]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.019"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[152]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[153]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[154]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.095"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[155]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[156]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.012"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[157]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[158]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.032"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[159]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[160]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[161]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[162]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.02"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[163]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[164]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[165]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[166]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.021"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[167]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[168]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[169]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.015"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[170]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[171]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[172]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[173]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.013"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[174]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.054"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[175]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.014"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[176]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[177]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.024"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[178]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.009"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[179]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[180]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.009"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[181]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.018"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[182]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.036"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[183]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[184]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.01"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[185]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[186]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.015"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[187]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[188]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.008"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[189]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.012"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[190]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.061"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[191]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.014"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[192]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.014"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[193]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.024"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[194]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.017"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[195]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[196]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[197]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.011"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[198]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.013"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[199]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[200]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[201]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.013"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[202]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.071"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[203]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[204]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.012"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[205]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.01"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[206]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.019"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[207]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.009"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[208]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[209]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[210]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[211]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.018"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[212]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.019"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[213]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[214]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[215]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[216]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[217]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[218]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.019"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[219]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[220]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.01"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[221]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[222]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.024"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[223]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.091"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[224]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.008"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[225]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.02"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[226]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.015"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[227]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.035"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[228]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.021"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[229]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[230]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.01"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[231]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.018"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[232]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.021"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[233]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[234]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[235]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.022"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[236]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.081"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[237]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[238]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.015"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[239]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.014"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[240]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.04"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[241]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.018"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[242]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[243]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[244]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.03"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[245]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.033"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[246]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[247]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[248]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.017"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[249]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.021"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[250]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.026"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[251]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[252]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[253]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.015"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[254]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.02"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[255]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.102"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[256]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.021"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[257]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.012"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[258]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.029"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[259]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.084"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[260]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[261]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.013"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[262]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.014"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[263]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.027"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[264]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.033"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[265]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.008"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[266]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[267]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.017"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[268]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.011"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[269]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[270]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[271]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.015"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[272]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.021"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[273]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.008"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[274]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[275]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.02"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[276]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.02"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[277]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[278]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[279]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.01"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[280]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.019"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[281]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[282]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[283]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.013"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[284]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.014"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[285]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[286]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[287]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[288]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.015"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[289]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.013"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[290]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.001"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[291]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[292]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.01"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[293]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.013"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[294]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.001"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[295]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[296]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[297]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[298]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.087"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[299]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.009"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[300]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.009"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[301]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.008"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[302]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.018"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[303]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[304]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[305]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[306]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[307]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.009"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[308]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[309]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.021"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[310]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[311]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[312]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.013"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[313]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[314]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[315]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.06"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[316]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.014"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[317]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[318]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.013"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[319]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[320]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[321]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.026"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[322]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[323]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[324]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[325]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[326]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[327]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.067"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[328]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.014"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[329]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[330]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[331]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[332]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[333]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.011"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[334]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[335]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[336]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.059"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[337]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[338]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.012"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[339]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[340]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.011"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[341]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[342]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[343]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[344]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.02"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[345]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[346]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[347]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[348]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.009"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[349]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.024"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[350]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[351]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.011"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[352]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.009"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[353]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.082"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[354]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[355]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.022"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[356]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.009"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[357]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.03"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[358]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[359]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[360]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.019"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[361]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[362]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[363]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.059"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[364]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[365]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.013"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[366]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[367]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.011"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[368]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[369]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[370]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.022"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[371]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[372]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[373]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[374]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.012"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[375]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[376]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[377]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[378]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.067"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[379]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.018"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[380]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[381]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.056"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[382]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[383]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.011"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[384]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[385]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.018"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[386]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[387]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[388]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.014"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[389]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[390]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[391]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.013"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[392]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[393]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[394]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.034"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[395]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[396]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[397]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[398]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.01"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[399]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[400]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[401]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.009"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[402]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.001"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[403]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[404]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[405]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.048"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[406]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[407]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[408]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[409]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.015"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[410]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[411]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.001"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[412]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.001"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[413]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[414]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[415]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.001"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[416]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[417]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.001"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[418]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.01"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[419]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.001"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[420]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[421]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[422]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[423]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[424]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[425]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[426]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[427]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[428]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[429]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.012"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[430]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[431]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.002"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[432]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.012"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[433]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.008"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[434]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[435]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[436]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[437]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[438]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[439]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[440]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[441]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.008"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[442]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[443]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.023"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[444]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[445]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[446]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.009"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[447]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.001"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[448]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[449]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.019"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[450]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[451]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.008"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[452]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.013"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[453]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[454]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[455]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.013"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[456]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[457]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[458]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.01"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[459]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[460]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.016"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[461]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.072"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[462]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[463]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[464]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.014"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[465]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[466]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[467]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.013"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[468]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.025"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[469]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.014"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[470]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.034"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[471]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[472]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[473]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.027"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[474]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[475]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[476]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.017"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[477]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[478]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.007"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[479]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.015"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[480]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.001"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[481]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.005"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[482]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.024"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[483]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.003"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[484]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.006"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[485]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.004"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[486]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.049"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[487]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.008"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[488]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.025"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[489]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.008"/>
+  <testcase name="testJavaParse{GeneratedJavaFile}[490]" classname="org.mybatis.generator.JavaCodeGenerationTest" time="0.033"/>
+</testsuite>

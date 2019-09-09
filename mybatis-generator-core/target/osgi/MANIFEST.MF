@@ -1,0 +1,73 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.mybatis.generator
+Bnd-LastModified: 1564987377192
+Build-Jdk: 12.0.2
+Built-By: mi
+Bundle-Description: MyBatis Generator - a code generator for MyBatis.
+Bundle-DocURL: http://www.mybatis.org/mybatis-generator/mybatis-generato
+ r-core/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: MyBatis Generator Core
+Bundle-SymbolicName: org.mybatis.generator.mybatis-generator-core
+Bundle-Vendor: MyBatis.org
+Bundle-Version: 1.4.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.mybatis.generator.ant;version="1.4.0.SNAPSHOT",org.m
+ ybatis.generator.api;version="1.4.0.SNAPSHOT",org.mybatis.generator.api
+ .dom;version="1.4.0.SNAPSHOT",org.mybatis.generator.api.dom.java;versio
+ n="1.4.0.SNAPSHOT",org.mybatis.generator.api.dom.java.render;version="1
+ .4.0.SNAPSHOT",org.mybatis.generator.api.dom.xml;version="1.4.0.SNAPSHO
+ T",org.mybatis.generator.api.dom.xml.render;version="1.4.0.SNAPSHOT",or
+ g.mybatis.generator.codegen;version="1.4.0.SNAPSHOT",org.mybatis.genera
+ tor.codegen.mybatis3;version="1.4.0.SNAPSHOT",org.mybatis.generator.cod
+ egen.mybatis3.javamapper;version="1.4.0.SNAPSHOT",org.mybatis.generator
+ .codegen.mybatis3.javamapper.elements;version="1.4.0.SNAPSHOT",org.myba
+ tis.generator.codegen.mybatis3.javamapper.elements.annotated;version="1
+ .4.0.SNAPSHOT",org.mybatis.generator.codegen.mybatis3.javamapper.elemen
+ ts.sqlprovider;version="1.4.0.SNAPSHOT",org.mybatis.generator.codegen.m
+ ybatis3.model;version="1.4.0.SNAPSHOT",org.mybatis.generator.codegen.my
+ batis3.xmlmapper;version="1.4.0.SNAPSHOT",org.mybatis.generator.codegen
+ .mybatis3.xmlmapper.elements;version="1.4.0.SNAPSHOT",org.mybatis.gener
+ ator.config;version="1.4.0.SNAPSHOT",org.mybatis.generator.config.xml;v
+ ersion="1.4.0.SNAPSHOT",org.mybatis.generator.exception;version="1.4.0.
+ SNAPSHOT",org.mybatis.generator.internal;version="1.4.0.SNAPSHOT",org.m
+ ybatis.generator.internal.db;version="1.4.0.SNAPSHOT",org.mybatis.gener
+ ator.internal.rules;version="1.4.0.SNAPSHOT",org.mybatis.generator.inte
+ rnal.types;version="1.4.0.SNAPSHOT",org.mybatis.generator.internal.util
+ ;version="1.4.0.SNAPSHOT",org.mybatis.generator.internal.util.messages;
+ version="1.4.0.SNAPSHOT",org.mybatis.generator.logging;version="1.4.0.S
+ NAPSHOT",org.mybatis.generator.logging.commons;version="1.4.0.SNAPSHOT"
+ ,org.mybatis.generator.logging.jdk14;version="1.4.0.SNAPSHOT",org.mybat
+ is.generator.logging.log4j;version="1.4.0.SNAPSHOT",org.mybatis.generat
+ or.logging.log4j2;version="1.4.0.SNAPSHOT",org.mybatis.generator.loggin
+ g.nologging;version="1.4.0.SNAPSHOT",org.mybatis.generator.logging.slf4
+ j;version="1.4.0.SNAPSHOT",org.mybatis.generator.plugins;version="1.4.0
+ .SNAPSHOT",org.mybatis.generator.runtime.dynamic.sql;version="1.4.0.SNA
+ PSHOT",org.mybatis.generator.runtime.dynamic.sql.elements;version="1.4.
+ 0.SNAPSHOT"
+Implementation-Build-Date: 2019-08-05 06:42:28+0000
+Implementation-Title: MyBatis Generator Core
+Implementation-URL: http://www.mybatis.org/mybatis-generator/mybatis-gen
+ erator-core/
+Implementation-Vendor: MyBatis.org
+Implementation-Vendor-Id: org.mybatis.generator
+Implementation-Version: 1.4.0-SNAPSHOT
+Import-Package: javax.xml.parsers,org.apache.commons.logging,org.apache.
+ log4j,org.apache.logging.log4j,org.apache.logging.log4j.message,org.apa
+ che.logging.log4j.spi,org.apache.tools.ant,org.apache.tools.ant.types,o
+ rg.slf4j,org.slf4j.spi,org.w3c.dom,org.xml.sax
+Include-Resource: org/mybatis/generator/config/xml/mybatis-generator-con
+ fig_1_0.dtd=src/main/resources/org/mybatis/generator/config/xml/mybatis
+ -generator-config_1_0.dtd,org/mybatis/generator/internal/util/messages/
+ messages.properties=src/main/resources/org/mybatis/generator/internal/u
+ til/messages/messages.properties,META-INF/LICENSE=LICENSE,META-INF/NOTI
+ CE=NOTICE
+Main-Class: org.mybatis.generator.api.ShellRunner
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: MyBatis Generator Core
+Specification-Vendor: MyBatis.org
+Specification-Version: 1.4.0-SNAPSHOT
+Tool: Bnd-4.1.0.201810181252
+X-Compile-Source-JDK: 1.8
+X-Compile-Target-JDK: 1.8
