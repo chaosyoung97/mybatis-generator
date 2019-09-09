@@ -1,0 +1,17 @@
+org\mybatis\generator\api\IntrospectedTable.class
+Generator.class
+com\mybatis\generator\MyInsertSelectiveElementGenerator.class
+com\mybatis\generator\ServiceControllerPlugin.class
+com\mybatis\generator\TkMyBatis3Impl.class
+com\mybatis\generator\EmptyCommentGenerator.class
+com\mybatis\generator\MyInsertElementGenerator.class
+com\mybatis\generator\MySQLCommentGenerator.class
+com\mybatis\generator\MyUpdateByPrimaryKeyWithoutBLOBsElementGenerator.class
+com\mybatis\generator\MyDeleteByPrimaryKeyElementGenerator.class
+com\mybatis\generator\MyUpdateByPrimaryKeySelectiveElementGenerator.class
+com\mybatis\generator\MyXMLMapperGenerator.class
+com\mybatis\generator\MyResultMapWithoutBLOBsElementGenerator.class
+com\mybatis\generator\MySelectByPrimaryKeyElementGenerator.class
+org\mybatis\generator\api\MyBatisGenerator.class
+org\mybatis\generator\api\IntrospectedTable$TargetRuntime.class
+org\mybatis\generator\api\IntrospectedTable$InternalAttribute.class
